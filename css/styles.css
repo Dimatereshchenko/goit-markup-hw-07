@@ -5,6 +5,7 @@ body {
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
+  --ocean: #404bbf;
 
   font-family: "Roboto", sans-serif;
   color: var(--navi-blue);
@@ -38,7 +39,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5em;
-  color: #4d5ae5;
+  color: var(--iris);
 }
 .logo-studio {
   font-family: "Raleway";
@@ -65,14 +66,16 @@ body {
 }
 .contacts-link {
   text-decoration: none;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--slate);
 }
+.contacts-link:hover {
+  color: var(--iris);
+}
 .hero {
   padding: 188px 0;
-  background: #2e2f42;
+  background: var(--navi-blue);
 }
 .hero-title {
   font-weight: 700;
@@ -94,7 +97,7 @@ body {
 }
 .button--primary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background: var(--iris);
   color: var(--white);
 }
 .button--primary:hover {
@@ -102,18 +105,18 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .button--primary:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
 .button--secondary {
   background-color: var(--cloud);
   color: var(--iris);
 }
 .button--secondary:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
   color: var(--white);
 }
 .button--secondary.active {
-  background-color: #404bbf;
+  background-color: var(--ocean);
   color: var(--white);
 }
 .button--sm {
@@ -121,7 +124,6 @@ body {
 }
 
 .features-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -129,9 +131,7 @@ body {
   color: var(--navi-blue);
 }
 .features-text {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--slate);
@@ -142,7 +142,6 @@ body {
   color: var(--navi-blue);
 }
 .projects-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -153,7 +152,6 @@ body {
   background-color: var(--cloud);
 }
 .taem-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -175,7 +173,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -183,9 +180,7 @@ body {
   color: var(--navi-blue);
 }
 .team-position {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--slate);
@@ -194,7 +189,6 @@ body {
   background-color: var(--navi-blue);
 }
 .footer-logo-studio {
-  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -202,16 +196,13 @@ body {
   color: var(--cloud);
 }
 .footer-text {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--cornflower);
 }
 
 .projectcard-name {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -219,13 +210,11 @@ body {
   color: var(--navi-blue);
 }
 .projectcard-position {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--slate);
 }
 .projectcard-item {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--cornflower);
 }

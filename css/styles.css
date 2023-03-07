@@ -1,7 +1,7 @@
 body {
   --navi-blue: #2e2f42;
   --white: #ffffff;
-  --slate: #434455;
+
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
@@ -30,19 +30,19 @@ body {
   text-decoration: none;
 }
 .logo-web {
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #4d5ae5;
 }
 .logo-studio {
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--navi-blue);
 }
 .header-nav {
@@ -55,7 +55,7 @@ body {
   color: var(--navi-blue);
 }
 .menu-item-link:hover {
-  color: var(--slate);
+  color: #434455;
 }
 .menu-item-link:focus {
   color: var(--iris);
@@ -64,7 +64,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5em;
-  color: var(--slate);
+  color: #434455;
 }
 .contacts-link:hover {
   color: var(--iris);
@@ -120,14 +120,12 @@ body {
 }
 
 .features-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5em;
   color: var(--navi-blue);
 }
 .features-text {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--slate);
@@ -138,7 +136,6 @@ body {
   color: var(--navi-blue);
 }
 .projects-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 2.5em;
@@ -148,7 +145,6 @@ body {
   background-color: var(--cloud);
 }
 .taem-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 2.5em;
@@ -169,47 +165,43 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5em;
   color: var(--navi-blue);
 }
 .team-position {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5em;
-  color: var(--slate);
+  color: #434455;
 }
 .footer {
   background-color: var(--navi-blue);
 }
 .footer-logo-studio {
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--cloud);
 }
 .footer-text {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--cornflower);
 }
 
 .projectcard-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5em;
   color: var(--navi-blue);
 }
 .projectcard-position {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5em;
-  color: var(--slate);
+  color: #434455;
 }
 .projectcard-item {
   border: 1px solid var(--cornflower);

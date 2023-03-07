@@ -29,17 +29,13 @@ body {
 .text-decoratione-none {
   text-decoration: none;
 }
-.logo {
-  text-decoration: none;
-}
-
 .logo-web {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5em;
-  color: var(--iris);
+  color: #4d5ae5;
 }
 .logo-studio {
   font-family: "Raleway";

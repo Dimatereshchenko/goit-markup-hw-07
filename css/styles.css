@@ -48,10 +48,13 @@ body {
   color: var(--navi-blue);
 }
 .menu-item-link:hover {
-  color: #404bbf;
+  color: var(--ocean);
 }
 .menu-item-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
+}
+.address {
+  font-style: normal;
 }
 .contacts-link {
   text-decoration: none;
@@ -161,6 +164,7 @@ button:focus {
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
+  border: none;
 }
 .button-link:hover {
   color: var(--white);

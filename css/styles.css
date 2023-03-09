@@ -48,10 +48,10 @@ body {
   color: var(--navi-blue);
 }
 .menu-item-link:hover {
-  color: var(--slate);
+  color: #404bbf;
 }
 .menu-item-link:focus {
-  color: var(--iris);
+  color: #404bbf;
 }
 .contacts-link {
   text-decoration: none;

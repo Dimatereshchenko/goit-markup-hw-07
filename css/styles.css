@@ -177,3 +177,10 @@ button:focus {
   color: var(--white);
   background-color: var(--ocean);
 }
+.banking-app {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navi-blue);
+}

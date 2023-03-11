@@ -11,14 +11,53 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
 }
+img {
+  display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
 }
-/**-----logo-----*/
+.container {
+  width: 1150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/**-----header-----*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 .logo-web {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -44,7 +83,10 @@ body {
 .menu {
   font-weight: 500;
   color: var(--navi-blue);
+  display: flex;
+  gap: 40px;
 }
+
 .menu-item-link {
   text-decoration: none;
   color: var(--navi-blue);
@@ -58,12 +100,14 @@ body {
 .address {
   font-style: normal;
 }
+
 .contacts-link {
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-left: 40px;
 }
 .contacts-link:hover {
   color: var(--ocean);
@@ -71,15 +115,24 @@ body {
 .contacts-link:focus {
   color: var(--ocean);
 }
+.contacts {
+  display: flex;
+  margin-right: auto;
+}
 /**----hero----*/
 .hero {
-  padding: 188px 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  padding-left: 472px;
+  padding-right: 472px;
   background: var(--navi-blue);
 }
 .hero-title {
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding: 0 auto;
   text-align: center;
   color: var(--white);
 }
@@ -87,6 +140,11 @@ body {
   background-color: var(--iris);
   color: var(--white);
   cursor: pointer;
+  display: block;
+  margin-top: 48px;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
 }
 .button:hover {
   color: var(--white);
@@ -97,16 +155,51 @@ button:focus {
   color: var(--white);
   background: var(--ocean);
 }
+/**----features----*/
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
 /**----projects----*/
+.projects-list {
+  display: flex;
+  gap: 24px;
+}
+.projects {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
 .projects-title {
+  margin-top: 0;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navi-blue);
+}
+/**----team----*/
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--cloud);
 }
 .team-title {
+  margin-top: 0;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -114,8 +207,27 @@ button:focus {
   text-transform: capitalize;
   color: var(--navi-blue);
 }
+.team-item {
+  background-color: var(--white);
+}
+.team-name {
+  margin: 0 49px 8px;
+}
+.team-img {
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+.team-position {
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 0;
+  padding-bottom: 32px;
+}
 /**----footer----*/
+
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--navi-blue);
 }
 .footer-logo-web {
@@ -141,6 +253,8 @@ button:focus {
   color: var(--cloud);
 }
 .footer-text {
+  max-width: 264px;
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -169,8 +283,18 @@ button:focus {
 }
 
 /**---------portfolio----------*/
+.portfolio-section {
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+.section-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
 .button-link {
+  border-radius: 4px;
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
@@ -180,4 +304,30 @@ button:focus {
 .button-link:hover {
   color: var(--white);
   background-color: var(--ocean);
+}
+.projectcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 0;
+  margin-top: 72px;
+}
+.projectcard-item {
+  width: 360px;
+  height: 420px;
+  border: 1px solid var(--cornflower);
+}
+.projectcard-name {
+  margin-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.projectcard-img {
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+.projectcard-position {
+  margin-left: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }

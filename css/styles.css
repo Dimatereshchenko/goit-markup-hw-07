@@ -13,6 +13,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 p,
 h1,
@@ -20,12 +22,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
+h6,
 ul {
-  padding-left: 0;
   margin: 0;
+  padding: 0;
+}
+.section {
+  padding: 120px 0;
 }
 address {
   font-style: normal;
@@ -37,7 +40,7 @@ address {
   list-style: none;
 }
 .container {
-  width: 1150px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -129,11 +132,11 @@ address {
   background: var(--navi-blue);
 }
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding: 0 auto;
+  margin: 0 auto;
   text-align: center;
   color: var(--white);
 }
@@ -142,7 +145,7 @@ address {
   color: var(--white);
   cursor: pointer;
   display: block;
-  margin-top: 48px;
+  margin: 48px auto 0;
   border-radius: 4px;
   width: 169px;
   height: 56px;
@@ -161,10 +164,7 @@ button:focus {
   display: flex;
   gap: 24px;
 }
-.features {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .features-title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -173,10 +173,10 @@ button:focus {
 .projects-list {
   display: flex;
   gap: 24px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .projects {
   padding-top: 0;
-  padding-bottom: 120px;
 }
 .projects-title {
   margin-top: 0;
@@ -192,6 +192,7 @@ button:focus {
 .team-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .team {
   padding-top: 120px;
@@ -210,21 +211,10 @@ button:focus {
 }
 .team-item {
   background-color: var(--white);
-}
-.team-name {
-  display: flex;
-  justify-content: center;
-  margin: 0 49px 8px;
+  flex-basis: calc((100% - 72px) / 4);
+  text-align: center;
 }
 .team-img {
-  padding-top: 0;
-  padding-bottom: 32px;
-}
-.team-position {
-  display: flex;
-  justify-content: center;
-  padding-left: 52px;
-  padding-right: 52px;
   padding-top: 0;
   padding-bottom: 32px;
 }
@@ -285,6 +275,7 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navi-blue);
+  margin-bottom: 8px;
 }
 
 /**---------portfolio----------*/
@@ -323,17 +314,15 @@ button:focus {
   height: 420px;
   border: 1px solid var(--cornflower);
 }
-.projectcard-name {
-  margin-left: 16px;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
+
 .projectcard-img {
-  padding-top: 0;
-  padding-bottom: 32px;
+  flex-basis: calc((100% - 216px) / 9);
 }
 .projectcard-position {
   margin-left: 16px;
   margin-top: 0;
   margin-bottom: 32px;
+}
+.element-style {
+  padding: 32px 16px;
 }

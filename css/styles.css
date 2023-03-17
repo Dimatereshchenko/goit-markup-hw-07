@@ -122,6 +122,7 @@ address {
 .contacts {
   display: flex;
   margin-right: auto;
+  gap: 40px;
 }
 /**----hero----*/
 .hero {
@@ -144,7 +145,7 @@ address {
   cursor: pointer;
   display: block;
   margin: 48px auto 0;
-  border-radius: 4px;
+
   width: 169px;
   height: 56px;
 }
@@ -217,10 +218,7 @@ button:focus {
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
 }
-.team-img {
-  padding-top: 0;
-  padding-bottom: 32px;
-}
+
 /**----footer----*/
 
 .footer {
@@ -313,7 +311,7 @@ button:focus {
   margin-top: 72px;
 }
 .projectcard-item {
-  flex-basis: auto;
+  flex-basis: calc((100% - 48px) / 3);
   border: 1px solid var(--cornflower);
 }
 

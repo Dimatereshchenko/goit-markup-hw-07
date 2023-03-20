@@ -235,11 +235,42 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navi-blue);
+  margin-bottom: 20px;
 }
 .team-item {
   background-color: var(--white);
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: 15%;
   text-align: center;
+}
+.team-soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-soc-item {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+.team-soc-item:last-child {
+  margin-right: 0;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-soc-icon {
 }
 .customers {
   margin-top: 0;

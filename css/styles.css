@@ -171,11 +171,20 @@ button:focus {
 }
 /**----features----*/
 .icon {
+  display: flex;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
   background: #f4f4fd;
+}
+.icon-item {
+  align-items: center;
 }
 .features-list {
   display: flex;
   gap: 24px;
+
+  justify-content: center;
 }
 .features-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -231,6 +240,30 @@ button:focus {
   background-color: var(--white);
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
+}
+.customers {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navi-blue);
+}
+.customers-item {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 144px) / 6);
+}
+.customers-link {
+  max-width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 144px) / 6);
 }
 
 /**----footer----*/

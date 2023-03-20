@@ -126,9 +126,20 @@ address {
 }
 /**----hero----*/
 .hero {
+  background-color: var(--navi-blue);
+  height: 600px;
+  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
-  background: var(--navi-blue);
+  text-align: center;
 }
 .hero-title {
   max-width: 496px;
@@ -159,6 +170,9 @@ button:focus {
   background: var(--ocean);
 }
 /**----features----*/
+.icon {
+  background: #f4f4fd;
+}
 .features-list {
   display: flex;
   gap: 24px;

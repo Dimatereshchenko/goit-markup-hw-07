@@ -239,7 +239,7 @@ button:focus {
 }
 .team-item {
   background-color: var(--white);
-  flex-basis: 15%;
+  flex-basis: calc((100% - 72px) / 4);
   text-align: center;
 }
 .team-soc-list {

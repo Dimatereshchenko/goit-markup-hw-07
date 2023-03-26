@@ -8,6 +8,7 @@
   --slate: #434455;
   --green: #31d0aa;
   --light-slate: #8e8f99;
+  --dairy: #fcfcfc;
 }
 
 body {
@@ -115,12 +116,35 @@ address {
 .menu-item-link {
   text-decoration: none;
   color: var(--navi-blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
+.menu-item-link.current {
+  color: var(--ocean);
+}
+
+.menu-item-link.current ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-125%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+}
+
 .menu-item-link:hover {
   color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item-link:focus {
   color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
   font-style: normal;
@@ -137,10 +161,14 @@ address {
 
 .contacts-link:hover {
   color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:focus {
   color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -192,11 +220,15 @@ address {
 .button:hover {
   color: var(--white);
   background-color: var(--iris);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus {
   color: var(--white);
   background: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**----features----*/
@@ -313,6 +345,8 @@ button:focus {
 
 .team-soc-link:hover {
   background: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -351,6 +385,8 @@ button:focus {
 .customers-item-link:hover {
   color: var(--ocean);
   border-color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-btn {
@@ -429,6 +465,8 @@ button:focus {
 
 .social-link:hover {
   background: var(--green);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-item {
@@ -482,6 +520,8 @@ button:focus {
 .button-link:hover {
   color: var(--white);
   background-color: var(--ocean);
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projectcard {
@@ -495,9 +535,32 @@ button:focus {
   flex-basis: calc((100% - 48px) / 3);
   border: 1px solid var(--cornflower);
 }
-.projectcard-item:hover {
+.projectcard-item:hover .projectcard-img-text {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projectcard-top {
+  position: relative;
+  overflow: hidden;
+}
+.projectcard-img-text {
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  background: var(--iris);
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 
 .projectcard-img {
@@ -506,4 +569,64 @@ button:focus {
 
 .element-style {
   padding: 32px 16px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 252, 252, 0.39);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.model {
+  position: absolute;
+  width: 408px;
+  min-height: 576px;
+  background: var(--dairy);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms linear;
+  padding: 24px;
+}
+
+.backdrop .is-hidden .model {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.model-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  fill: var(--navi-blue);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  border: 1px solid rgba(46, 47, 66, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.model-close:hover {
+  fill: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid rgba(46, 47, 66, 0.1);
+}
+
+.model-close:focus {
+  fill: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid rgba(46, 47, 66, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

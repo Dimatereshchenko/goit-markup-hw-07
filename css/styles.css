@@ -502,7 +502,7 @@ button:focus {
   width: 264px;
   background-color: transparent;
   outline: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-button {
   display: flex;
@@ -534,9 +534,6 @@ button:focus {
 }
 
 .subscribe-svg {
-  height: 24px;
-  width: 24px;
-  color: var(--white);
 }
 
 /**----other----*/
@@ -650,8 +647,7 @@ button:focus {
 }
 
 .modal {
-  margin-left: auto;
-  margin-right: auto;
+  padding: 72px 24px 24px 24px;
   max-width: 408px;
   width: 100%;
   min-height: 576px;
@@ -662,7 +658,7 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
-  padding: 24px;
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -700,8 +696,13 @@ button:focus {
   margin-right: auto;
 }
 .modal-title {
-  padding-top: 48px;
-  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navi-blue);
+  margin-bottom: 16px;
 }
 .modal-input {
   width: 100%;
@@ -718,8 +719,9 @@ button:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
-.modal-input :focus {
-  border-color: var(--iris);
+.modal-input :focus,
+.modal-input :active {
+  border: 1px solid var(--iris);
 }
 .modal-input:focus + .input-icon {
   fill: var(--iris);
@@ -747,9 +749,12 @@ button:focus {
 }
 .input-icon {
   position: absolute;
-  left: 20px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal-icon {
+  position: relative;
 }
 
 .coment {

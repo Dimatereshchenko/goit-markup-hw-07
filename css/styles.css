@@ -762,6 +762,9 @@ border .subscribe-input {
   color: var(--light-slate);
   margin-top: 8px;
 }
+.text-comment {
+  display: flex;
+}
 .text-comment-input {
   width: 100%;
   height: 120px;
@@ -809,8 +812,9 @@ border .subscribe-input {
   opacity: 1;
 }
 .accept {
+  padding-left: 8px;
   padding-top: 16px;
-  display: flex;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;

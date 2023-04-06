@@ -487,8 +487,7 @@ button:focus {
 .subscribe-section {
   display: flex;
 }
-
-.subscribe-input {
+border .subscribe-input {
   font-family: "Roboto";
   font-size: 12px;
   line-height: 1.33;
@@ -531,9 +530,6 @@ button:focus {
   margin-right: 16px;
   padding: 0;
   border: none;
-}
-
-.subscribe-svg {
 }
 
 /**----other----*/
@@ -721,6 +717,7 @@ button:focus {
 }
 .modal-input :focus,
 .modal-input :active {
+  outline: none;
   border: 1px solid var(--iris);
 }
 .modal-input:focus + .input-icon {
@@ -739,14 +736,15 @@ button:focus {
   border: none;
   margin-bottom: 30px;
 }
+
 .modal-list input {
   border: 1px solid rgba(46, 47, 66, 0.4);
-
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 38px;
 }
+
 .input-icon {
   position: absolute;
   left: 16px;
@@ -796,7 +794,7 @@ button:focus {
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
-.text-comment-input:focus .text-comment-input:active {
+.text-commetn .text-comment-input:focus .text-comment-input:active {
   border: 1px solid var(--accent-color);
 }
 

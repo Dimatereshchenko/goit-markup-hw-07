@@ -762,7 +762,8 @@ border .subscribe-input {
   color: var(--light-slate);
   margin-top: 8px;
 }
-.text-comment {
+.text-commetn {
+  align-items: center;
   display: flex;
 }
 .text-comment-input {

@@ -777,6 +777,7 @@ border .subscribe-input {
 }
 .check {
   opacity: 0;
+  fill: var(--white);
 }
 
 .checkbox {
@@ -800,7 +801,12 @@ border .subscribe-input {
   align-items: center;
   justify-content: center;
 }
-.checkbox:checked + .checkbox-wrap {
+.checkbox:checked + .check-wrap .check {
+  opacity: 1;
+}
+
+.checkbox:checked + .check-wrap {
+  border-color: var(--ocean);
   background-color: var(--ocean);
 }
 .accept {

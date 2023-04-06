@@ -801,15 +801,16 @@ border .subscribe-input {
   align-items: center;
   justify-content: center;
 }
-.checkbox:checked + .check-wrap .check {
-  opacity: 1;
-}
-
-.checkbox:checked + .check-wrap {
+.checkbox:checked + .text-commetn .check-wrap {
   border-color: var(--ocean);
   background-color: var(--ocean);
 }
+.checkbox:checked + .text-commetn .check-wrap .check {
+  opacity: 1;
+}
 .accept {
+  padding-top: 16px;
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;

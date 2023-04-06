@@ -812,14 +812,16 @@ border .subscribe-input {
   opacity: 1;
 }
 .accept {
-  padding-left: 8px;
   padding-top: 16px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
+}
+.text-comment-content {
+  display: block;
+  padding-left: 8px;
 }
 .text-commetn .text-comment-input:focus .text-comment-input:active {
   border: 1px solid var(--accent-color);

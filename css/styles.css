@@ -715,9 +715,8 @@ border .subscribe-input {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
-.modal-input :focus,
-.modal-input :active {
-  outline: none;
+.modal-input:focus,
+.modal-input:active {
   border: 1px solid var(--iris);
 }
 .modal-input:focus + .input-icon {
@@ -776,16 +775,33 @@ border .subscribe-input {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+.check {
+  opacity: 0;
+}
 
 .checkbox {
-  box-sizing: border-box;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check-wrap {
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
+  border: 1px solid var(--navi-blue);
   border-radius: 2px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox:checked + .checkbox-wrap {
+  background-color: var(--ocean);
 }
 .accept {
   font-weight: 400;
